@@ -16,7 +16,7 @@ private void initVolley() {
 GsonRequestHttpClient发送post请求：
 
 
-                String url = ApiUtils.formatUrl(this, R.string.api_get_weather_info);
+        String url = ApiUtils.formatUrl(this, R.string.api_get_weather_info);
 		new GsonRequestHttpClient.PostBuilder<WeatherInfoData>(WeatherInfoData.class)
 			.url(url)
 			.param("city", "深圳")
@@ -44,7 +44,7 @@ GsonRequestHttpClient发送post请求：
 GsonRequestHttpClient发送get请求：
 
 
-                String url = ApiUtils.formatUrl(this, R.string.api_get_weather_info);
+        String url = ApiUtils.formatUrl(this, R.string.api_get_weather_info);
 		new GsonRequestHttpClient.GetBuilder<WeatherInfoData>(WeatherInfoData.class)
 			.url(url)
 			.param("city", "深圳")
