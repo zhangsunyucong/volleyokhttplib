@@ -14,7 +14,9 @@ private void initVolley() {
 下面是GsonRequestHttpClient的get和post请求，其他的JsonArrayRequestHttpClient、JsonObjectRequestHttpClient和StringRequestHttpClient用法类似。
 关于定义实体的格式约定，请查看demo。
 GsonRequestHttpClient发送post请求：
-    String url = ApiUtils.formatUrl(this, R.string.api_get_weather_info);
+
+
+                String url = ApiUtils.formatUrl(this, R.string.api_get_weather_info);
 		new GsonRequestHttpClient.PostBuilder<WeatherInfoData>(WeatherInfoData.class)
 			.url(url)
 			.param("city", "深圳")
@@ -40,7 +42,9 @@ GsonRequestHttpClient发送post请求：
 			
 			
 GsonRequestHttpClient发送get请求：
-String url = ApiUtils.formatUrl(this, R.string.api_get_weather_info);
+
+
+                String url = ApiUtils.formatUrl(this, R.string.api_get_weather_info);
 		new GsonRequestHttpClient.GetBuilder<WeatherInfoData>(WeatherInfoData.class)
 			.url(url)
 			.param("city", "深圳")
